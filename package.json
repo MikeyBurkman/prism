@@ -1,0 +1,18 @@
+{
+	"name": "prism",
+	"description": "CLI tool for reading CSV and JSON files into Elasticsearch",
+	"version": "1.0.0",
+	"dependencies": {
+		"eggnog": "0.3.1",
+		"csv": "0.4.1",
+		"ld-jsonstream": "0.0.2",
+		"q": "1.1.2",
+		"elasticsearch": "3.1.1",
+		"commander": "2.6.0",
+		"exit": "0.1.2",
+		"big.js": "3.0.0"
+	},
+	"engines": {
+		"node": ">=0.10.0"
+	}
+}

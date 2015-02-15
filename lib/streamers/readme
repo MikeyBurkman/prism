@@ -1,0 +1,10 @@
+Streamers are functions that take two arguments: a file, and a callback function.
+
+The streamer parses the file, and calls the callback function with each object read from the file.
+(For instance, the callback is called for each row in a CSV file).
+
+The streaming returns a Q-like Promise.
+It resolves when the file has finished parsing and the callback has been called for everything in the file. 
+The promise is rejected on any errors reading when parsing.
+
+Streamers should make a best effort to indeed stream everything, as the files being parsed may be quite large.
