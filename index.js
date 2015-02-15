@@ -1,5 +1,5 @@
 
-var eggnog = require('../eggnog');
+var eggnog = require('eggnog');
 var config = require('./config.js');
 var path = require('path');
 
