@@ -21,7 +21,7 @@ module.exports = {
 	// It matches exactly what you see here:
 	// http://www.elasticsearch.org/guide/en/elasticsearch/client/javascript-api/current/configuration.html
 	// Some default values are provided for guidance.
-	esConfig: {
+	esClientConfig: {
 		host: 'localhost:9200',
 		requestTimeout: 36000000, // Something long, doesn't matter too much, as we're not querying...
 		log: 'info'
