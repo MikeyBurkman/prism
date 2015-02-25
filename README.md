@@ -25,3 +25,6 @@ NodeJs tool for loading CSV or JSON files into Elasticsearch
 
 ### Help!
  - Adding `--help` as an argument to any of the above calls will spit out some help. IE: `run --help` or `run index --help`
+
+### Running Prism from another script
+ - Prism will look for config files relative to `index.js`. If you are calling Prism from another directory, this will likely lead to issues unless you always specify an absolute path to all files. To fix this, you may set the `PRISM_HOME` environment variable to another location, and Prism will look for all files relative to that.
