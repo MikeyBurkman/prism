@@ -10,8 +10,8 @@ NodeJs tool for loading CSV or JSON files into Elasticsearch
 ## Do some real work!
 
 ### Indexing a CSV/JSON File
- 1. Simply call `node prism.js index` to create the ES index and start reading/indexing the CSV file given in `./config.js`
-   - `./config.js` is the default config file. If your config is declared in a different file, use the -c or --config option to the call. IE: `node prism.js -c ./otherConfig.js` or `node prism.js --config ./otherConfig.js`
+ 1. Simply call `node prism.js index` to create the ES index (if it doesn't already exist) and start reading/indexing the CSV file given in `./config.js`
+   - `./config.js` is the default config file. If your config is declared in a different file, use the `-c` or `--config` option to the call. IE: `node prism.js -c ./otherConfig.js` or `node prism.js --config ./otherConfig.js`
  2. That should do it! If your file is large, it may take several minutes (or more) to complete!
  - Remember that if you index the same file multiple times without clearing the index (below), you'll get duplicate data!
 
