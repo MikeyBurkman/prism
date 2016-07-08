@@ -1,15 +1,7 @@
 
-var eggnog = require('eggnog');
+var cli = require('./lib/cli');
 
-var ctx = eggnog.newContext({
-	nodeModulesAt: __dirname
-});
-
-ctx.addDirectory(__dirname + '/lib');
-
-var cli = ctx.main();
-
-// The root directory is either the PRISM_HOME environment variable, or 
+// The root directory is either the PRISM_HOME environment variable, or
 //	default to __dirname if not provided.
 var prismHome = process.env.PRISM_HOME;
 if (!prismHome) {

@@ -2,12 +2,6 @@
 // This file is meant to be modified by end users.
 // You shouldn't need to edit anything else, except maybe package.json, if your spec file requires other libraries.
 
-// Big.js is provided for parsing arbitrary-precision numbers (such as currencies). 
-// It's not necessary to use this, but it might be nic eto have.
-// See https://www.npmjs.com/package/big.js
-// If other libraries are necessary, you'll have to manually edit package.json and add them.
-var big = require('big.js');
-
 module.exports = {
 
 	// File to parse. Relative to index.js or an asolute path.
@@ -15,8 +9,8 @@ module.exports = {
 	//	an array each data into the transform function. That's not tested.
 	// If JSON, then it should be a line-delimited json file.
 	// 	(See https://en.wikipedia.org/wiki/Line_Delimited_JSON)
-	fileToParse: './data/test.json',
-	//fileToParse: './data/test.csv',
+	//fileToParse: './data/test.json',
+	fileToParse: './data/test.csv',
 
 	// esConfig is the Elasticsearch client configuration.
 	// It matches exactly what you see here:
